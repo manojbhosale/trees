@@ -1,0 +1,12 @@
+package com.man.interval;
+
+public class GenomeDriver {
+
+	
+	public static void main(String args[]){
+		
+		Interval i1 = new Interval();
+		
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.man.interval;
+
+public class Locus extends Interval {
+	
+	
+	public void testPolymorphism(){
+		
+		System.out.println("LocusSlave");
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+package parameterized;
+
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+@RunWith(Parameterized.class)
+public class PrimeNumberCheckerTest {
+	private Integer inputNumber;
+	private Boolean expectedResult;
+	private PrimeNumberChecker primeNumberChecker;
+	
+	
+	
+	
+	@Before
+	public void initialize(){
+		primeNumberChecker = new PrimeNumberChecker();
+	}
+
+	// each parameter should be placed as argument here
+	// every time runner triggers it will pass the arguments
+	// from parameters we defined in primeNumbers() method
+	public PrimeNumberCheckerTest(Integer inputNumber, Boolean expectedResults){
+		this.inputNumber = inputNumber;
+		this.expectedResult = expectedResults;		
+	}
+	
+	
+	
+}

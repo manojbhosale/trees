@@ -1,0 +1,8 @@
+package assertionTest;
+
+import org.junit.runner.Result;
+import org.junit.runner.Result;
+
+public class TestRunner {
+
+}

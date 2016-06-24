@@ -1,0 +1,21 @@
+package dsTutorialPoints;
+
+public class ArrayM<T> {
+
+	
+	
+	public ArrayM<T> insert(T i){
+		
+		
+		
+		
+	}
+	
+	public int size(){
+		
+		for(this)
+		
+		return 
+	}
+	
+}

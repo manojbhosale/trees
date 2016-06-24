@@ -1,0 +1,24 @@
+package com.man.interval;
+
+public class TestClassSort implements Comparable{
+
+	public int age;
+	public String name;
+	
+	public TestClassSort(int age, String name){
+		
+		this.age = age;
+		this.name = name;
+		
+	}
+
+	@Override
+	public int compareTo(Object arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+	
+	
+}

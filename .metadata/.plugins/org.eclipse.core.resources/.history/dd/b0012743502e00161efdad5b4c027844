@@ -1,0 +1,13 @@
+package tp1;
+
+
+
+public class TestJUnit1 {
+	
+	String message = "Robert";
+	MessageUtil messageUtil = new MessageUtil(message);
+	
+	@test
+	
+
+}

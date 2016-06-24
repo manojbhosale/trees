@@ -1,0 +1,37 @@
+package bayes;
+
+public class SomeProbCalculations {
+	
+	
+	
+	public static void main(String args[]){
+
+		
+			System.out.println(new SomeProbCalculations().calBayesProb(0.1, 0.9, 0.8));
+			
+			System.out.println(new SomeProbCalculations().getBayesProbPos(0.1, 0.9, 0.8));
+		
+	}
+	
+	
+	public double calBayesProb(double p0, double p1, double p2){
+		
+		return (p0 * p1 + (1-p0) * p2);
+
+	}
+	
+	public double getBayesProbPos(double prior, double sensitivity, double specificity){
+		
+		return (prior * sensitivity)/((prior*sensitivity)+((1-prior)*(1-specificity)));
+		
+		
+	}
+	
+	public double getBayesProbNeg(double prior, double sensitivity, double specificity){
+		
+		return ((1-prior) * sensitivity)/((1-prior*sensitivity)+((1-prior)*(1-specificity)));
+		
+		
+	}
+
+}

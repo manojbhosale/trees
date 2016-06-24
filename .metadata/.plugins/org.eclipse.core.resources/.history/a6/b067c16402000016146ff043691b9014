@@ -1,0 +1,20 @@
+package bayes;
+
+public class SomeProbCalculations {
+	
+	
+	
+	public static void main(String args[]){
+		
+		
+	}
+	
+	
+	public double calBayesProb(double p0, double p1, double p2){
+		
+		return (p0 * p1 + 
+		
+		
+	}
+
+}

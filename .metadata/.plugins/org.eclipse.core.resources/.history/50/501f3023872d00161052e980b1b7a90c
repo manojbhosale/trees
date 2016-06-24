@@ -1,0 +1,11 @@
+package lists;
+
+public class SList {
+
+	public class Node{
+		
+		
+		
+	}
+	
+}

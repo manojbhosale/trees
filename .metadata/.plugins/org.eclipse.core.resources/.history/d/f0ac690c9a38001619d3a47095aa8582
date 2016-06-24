@@ -1,0 +1,12 @@
+package binaryTree;
+
+public class BinaryTree<T> {
+	
+	BinaryTreeNode<T> btn;
+	
+	public BinaryTree(){
+		
+	}
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 11 resources" deleteContents="false" description="Delete 11 resources" element1="/external-example" element10="/gatk-utils" element11="/gsalib" element2="/gatk-aggregator" element3="/gatk-aggregator-public" element4="/gatk-engine" element5="/gatk-queue" element6="/gatk-queue-extensions-generator" element7="/gatk-queue-extensions-public" element8="/gatk-root" element9="/gatk-tools-public" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="11" stamp="1457196363319"/>
+</session>

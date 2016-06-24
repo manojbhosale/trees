@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestAssertion" project="junitTesting" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="assertionTest.TestAssertion" time="0.016">
+    <testcase name="testAssertions" classname="assertionTest.TestAssertion" time="0.016">
+      <error>java.lang.ArithmeticException: / by zero&#13;
+	at assertionTest.TestAssertion.testAssertions(TestAssertion.java:57)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.internal.runners.statements.FailOnTimeout$StatementThread.run(FailOnTimeout.java:74)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

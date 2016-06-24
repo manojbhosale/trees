@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;parameterized.ParamNumberCheckerTest&apos; to &apos;PrimeNumberCheckerTest&apos;&#x0D;&#x0A;- Original project: &apos;junitTesting&apos;&#x0D;&#x0A;- Original element: &apos;parameterized.ParamNumberCheckerTest&apos;&#x0D;&#x0A;- Renamed element: &apos;parameterized.PrimeNumberCheckerTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ParamNumberCheckerTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;parameterized{ParamNumberCheckerTest.java[ParamNumberCheckerTest" matchStrategy="1" name="PrimeNumberCheckerTest" qualified="false" references="true" similarDeclarations="false" stamp="1465829623688" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package lambdas;
+
+public class LambdaOperators {
+	
+	public static void main(String args[]){
+		
+		MathOperators mo = (a, b) -> a + b;
+		
+		
+		System.out.println(mo.operator(10, 11));
+		
+	}
+
+	interface MathOperators{
+		
+		
+		public int operator(int a, int b);
+		 
+		
+	}
+	
+	
+	
+}

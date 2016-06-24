@@ -1,0 +1,139 @@
+package bayes;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.print.attribute.HashAttributeSet;
+
+public class CentralLimitTheroem {
+	
+	
+	public static void main(String args[]){
+		
+		System.out.println();
+		
+		
+		
+		/*System.out.println(l);
+		double mean = l.stream().mapToInt(e -> e).average().getAsDouble();
+*/		
+				
+		//List<Integer> a = Arrays.asList(1,2,3,4);
+		
+		//int sum =  a.stream().mapToInt(e-> e).sum();
+		
+		Double[] i = new CentralLimitTheroem().flip(1000);
+		//List<Integer> l = Arrays.asList(i);
+		//Double[] t = {3.0,4.0,5.0,6.0,7.0,7.0,7.0};
+		
+		Double[] t = {}; 
+		
+		System.out.println(variance(t));
+		System.out.println(standardDeveation(t));
+		System.out.println(mean(t));
+		System.out.println(mode(t));
+		System.out.println(median(t));
+	}
+	
+	public Double[] flip(int n){
+		
+		Double[] rands = new Double[n];
+		
+		List<Integer> l = new ArrayList<Integer>();
+		
+		for(int i = 0 ; i < n ;i++)
+			rands[i] = Math.random() > 0.5 ? 1.0 : 0;
+		return rands;
+	}
+	
+	public static double variance(Double[] in){
+		
+		int count = in.length;
+		double sumX = 0;
+		double sumXsquare = 0;
+		
+		for(int i = 0; i < in.length; i++){
+			
+			sumX = sumX + in[i];
+			sumXsquare = sumXsquare + Math.pow(in[i], 2); 
+		}
+		
+		System.out.println(count + " " + sumX + " " + sumXsquare);
+		
+		return ((1.0/count) * sumXsquare) - ((1.0/Math.pow(count,2)) * Math.pow(sumX,2));
+		
+	}
+	
+	
+	public static double standardDeveation(Double[] in){
+		
+		return Math.sqrt(variance(in));
+		
+	}
+	
+	
+	public static double mean(Double[] in){
+		
+		return sum(in)/in.length;
+		
+	}
+	
+	public static double median(Double[] in){
+		
+		Arrays.sort(in);
+		int pos = in.length-1;
+		
+		return in[(int) pos/2];
+		
+	}
+	
+	public static double mode(Double[] in){
+		
+		Map<Double,Integer> mp = count(in);
+		Double oldWinner = 0.0;
+		int countMax = 0;
+		for(Double i : mp.keySet()){
+			
+			if(mp.get(i)>countMax){
+				oldWinner = i;
+				countMax = mp.get(i);
+			}
+			
+		}
+		return oldWinner;
+		
+	}
+	
+	
+	public static Map<Double, Integer> count(Double[] in){
+		
+		Map<Double,Integer> mp = new HashMap<Double,Integer>();
+		int cnt;
+		for(Double i : in){
+			
+			if(mp.containsKey(i)){
+				cnt = mp.get(i);
+				cnt++;
+				mp.put(i,cnt);
+			}else{
+				mp.put(i,1);
+			}
+			
+		}
+		
+		return mp;
+		
+	}
+	
+	
+	public static double sum(Double[] in){
+		
+		List<Double> l = Arrays.asList(in);
+		
+		return l.stream().mapToDouble(e -> e).sum();
+		
+	}
+}

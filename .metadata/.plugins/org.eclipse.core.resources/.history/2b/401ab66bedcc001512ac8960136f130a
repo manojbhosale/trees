@@ -1,0 +1,22 @@
+package com.man.interval;
+
+public class GenomeDriver {
+
+	
+	public static void main(String args[]){
+		
+		Interval i1 = new Interval(100,200,"chr1");
+		Interval i2 = new Interval(101,201,"chr2");
+		Interval i3 = new Interval(103,203,"chr1");
+		Interval i4 = new Interval(102,202,"chr1");
+		
+		Gene g1 = new Gene(i1,"BRCA",10,'+');
+		Gene g2 = new Gene(i1,"BRCA",10,'+');
+		Gene g3 = new Gene(i1,"BRCA",10,'+');
+		Gene g4 = new Gene(i1,"BRCA",10,'+');
+		
+		System.out.println(g1+"\n"+g2+"\n"+g3+"\n"+g4);
+		
+	}
+	
+}

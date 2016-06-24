@@ -1,0 +1,17 @@
+package lambdas;
+
+public class LambdaOperators {
+	
+	public static void main(String args[]){
+		
+		
+		
+	}
+
+	interface MathOperators(){
+		
+		
+		
+	}
+	
+}

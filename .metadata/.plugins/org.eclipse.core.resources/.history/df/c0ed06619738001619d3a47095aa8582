@@ -1,0 +1,10 @@
+package binaryTree;
+
+public class BinaryTreeNode<T> {
+	
+	private T data;
+	private BinaryTree<T> leftNode;
+	private BinaryTree<T> leftNode;
+	
+
+}

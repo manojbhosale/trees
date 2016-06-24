@@ -1,0 +1,75 @@
+package anonymousClasses;
+
+public class TestAnonymous {
+
+	public static void main(String args[]){
+		
+		TestAnonymous ta = new TestAnonymous();
+		
+		String test = "Manoj";
+		
+		ta.sayHello();
+	}
+	public void sayHello(){
+		
+		
+
+		Shape s = new Shape() {
+		
+			int test = 100;
+			
+			@Override
+			public void printName() {
+				// TODO Auto-generated method stub
+				System.out.println("Hi "+test);
+			}
+			
+			@Override
+			public void draw() {
+				// TODO Auto-generated method stub
+				System.out.println("bye ");
+			}
+			{
+				test = 200;
+			}
+		};
+		s.draw();
+		
+	}	
+	
+	
+}
+
+
+
+
+interface Shape{
+	
+	String name="Test";
+	void printName();
+	void draw();
+}
+
+class Rectangle implements Shape{
+
+	String name;
+	
+	public Rectangle(String name){
+		this.name = name;
+	}
+	
+	@Override
+	public void printName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void draw() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

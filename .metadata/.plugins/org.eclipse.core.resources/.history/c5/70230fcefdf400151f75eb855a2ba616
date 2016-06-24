@@ -1,0 +1,26 @@
+package dsTutorialPoints;
+
+public class ArrayM<T> {
+
+	
+	
+	public ArrayM<T> insert(T i, int index){
+		
+		int j = this.getSize();
+		
+		while(){
+			
+			
+		}
+		
+		
+	}
+	
+	public int getSize(){
+		
+		for(this)
+		
+		return 
+	}
+	
+}

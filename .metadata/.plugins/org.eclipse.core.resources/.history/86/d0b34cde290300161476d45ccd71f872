@@ -1,0 +1,38 @@
+package bayes;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class CentralLimitTheroem {
+	
+	
+	public static void main(String args[]){
+		
+		System.out.println();
+		
+		Integer[] i = new CentralLimitTheroem().flip(100);
+		List<Integer> l = Arrays.asList(i);
+		float mean = l.stream().mapToInt(e -> e).average();
+				
+		//List<Integer> a = Arrays.asList(1,2,3,4);
+		
+		//int sum =  a.stream().mapToInt(e-> e).sum();
+		
+	}
+	
+	public Integer[] flip(int n){
+		
+		Integer[] rands = new Integer[n];
+		
+		List<Integer> l = new ArrayList<Integer>();
+		
+		for(int i = 0 ; i < n ;i++)
+			rands[i] = Math.random() > 0.5 ? 1 : 0;
+		
+		return rands;
+	}
+	
+	
+
+}

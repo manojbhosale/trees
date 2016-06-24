@@ -1,0 +1,33 @@
+package dsTutorialPoints;
+
+public class ArrayM {
+
+	int am[];
+	
+	public ArrayM() {
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+	public ArrayM<T> insert(T i, int index){
+		
+		int j = this.getSize();
+		
+		while(index <= j){
+			
+			j--;
+			am[j+1] = am[j];
+			
+		}
+		am[index] = i;
+		
+	}
+	
+	public int getSize(){
+		
+		
+		
+		return am.length; 
+	}
+	
+}

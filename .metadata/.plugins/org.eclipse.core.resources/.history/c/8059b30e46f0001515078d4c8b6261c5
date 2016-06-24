@@ -1,0 +1,98 @@
+package lambdas;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Person {
+	
+	public enum Sex{
+		
+		MALE, FEMALE
+		
+	}
+	
+	
+	String name;
+	LocalDate birthday;
+	Sex gender;
+	String emailAddress;
+	
+	public int getAge(){
+		return 0;
+		
+		
+	}
+	
+	public void printPerson(){
+		
+	}
+	
+	public static void printPersonsOlderThan(List<Person> roster, int age){
+		
+		for(Person p: roster){
+			
+			if(p.getAge() >= age){
+				
+				p.printPerson();
+				
+			}
+			
+		}
+		
+	}
+	
+	public static void printPersonsWithinAgeRange(List<Person> roster , int low, int high){
+		
+		for(Person p : roster){
+			
+			if(low <= p.getAge() && high >= p.getAge()){
+				
+				p.printPerson();
+			}
+			
+		}
+		
+		
+	}
+	
+	public static void printPersons(List<Person> roster, CheckPerson tester){
+		
+		for(Person p : roster){
+			if(tester.test(p)){
+				p.printPerson();
+			}
+		}
+		
+	}
+	
+	interface CheckPerson{
+		boolean test(Person p);
+	}
+
+	class CheckPersonEligibleForSelectiveService implements CheckPerson{
+		
+		public boolean test(Person p){
+			
+			return p.gender == Person.Sex.MALE && p.getAge() >= 18 && p.getAge() <= 25;
+			
+		}
+		
+		
+	}
+
+	
+public static void main(String args[]){
+	/* to use this CheckPersonEligibleForSelectiveService class
+	 * we need to create instance of this class and need to pass it to the
+	 * printPersons() method
+	 *  
+	 *  
+	 */
+	List<Person> roster  = new ArrayList<Person>();
+	Person p = new Person();
+	printPersons(roster, new CheckPersonEligibleForSelectiveService());
+
+}
+	
+}

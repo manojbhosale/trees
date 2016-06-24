@@ -1,0 +1,14 @@
+package com.man.interval;
+
+import java.io.FileReader;
+import java.io.IOException;
+
+public class TestProperties {
+
+	public static void main(String args[]) throws IOException{
+		
+		FileReader fr = new FileReader("config.properties");
+		
+	}
+	
+}

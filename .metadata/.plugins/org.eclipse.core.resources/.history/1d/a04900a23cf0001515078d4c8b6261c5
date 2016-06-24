@@ -1,0 +1,14 @@
+package lambdas;
+
+public class Person {
+	
+	public enum Sex{
+		
+		MALE, FEMALE
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.man.interval.GenomicInterval.java&apos; to &apos;Gene.java&apos;&#x0D;&#x0A;- Original project: &apos;incremental&apos;&#x0D;&#x0A;- Original element: &apos;com.man.interval.GenomicInterval.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.man.interval.Gene.java&apos;" description="Rename compilation unit &apos;GenomicInterval.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.man.interval{GenomicInterval.java" name="Gene.java" references="false" stamp="1454773790937" version="1.0"/>
+</session>

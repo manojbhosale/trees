@@ -1,0 +1,15 @@
+package com.man.interval;
+
+public class TestClassSort {
+
+	public int age;
+	public String name;
+	
+	public TestClassSort(int age, String name){
+		
+		
+		
+	}
+	
+	
+}

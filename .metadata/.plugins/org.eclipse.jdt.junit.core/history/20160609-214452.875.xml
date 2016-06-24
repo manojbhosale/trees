@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestJunit" project="junitTesting" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="tp1.TestJunit" time="0.0">
+    <testcase name="testAdd" classname="tp1.TestJunit" time="0.0"/>
+    <testcase name="testPrintMessage" classname="tp1.TestJunit" time="0.0"/>
+  </testsuite>
+</testrun>

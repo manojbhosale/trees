@@ -1,0 +1,12 @@
+package com.man.interval;
+
+public class Locus {
+	
+	
+public void testPolymorphism(){
+		
+		System.out.println("Master");
+		
+	}
+
+}

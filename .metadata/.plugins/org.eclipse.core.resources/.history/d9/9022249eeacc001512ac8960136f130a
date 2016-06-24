@@ -1,0 +1,42 @@
+package com.man.interval;
+
+public class Gene{
+	private Interval interval; 
+	private String geneName;
+	private int exonCount;
+	private char strand;
+	public Interval getInterval() {
+		return interval;
+	}
+	public void setInterval(Interval interval) {
+		this.interval = interval;
+	}
+	public String getGeneName() {
+		return geneName;
+	}
+	public void setGeneName(String geneName) {
+		this.geneName = geneName;
+	}
+	public int getExonCount() {
+		return exonCount;
+	}
+	public void setExonCount(int exonCount) {
+		this.exonCount = exonCount;
+	}
+	public char getStrand() {
+		return strand;
+	}
+	public void setStrand(char strand) {
+		this.strand = strand;
+	}
+	public Gene(Interval interval, String geneName, int exonCount, char strand) {
+		super();
+		this.interval = interval;
+		this.geneName = geneName;
+		this.exonCount = exonCount;
+		this.strand = strand;
+	}
+	
+	
+
+}

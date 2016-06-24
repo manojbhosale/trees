@@ -1,0 +1,8 @@
+package com.man.interval;
+
+public class Gene{
+	private Interval interval; 
+	private String geneName;
+	
+
+}

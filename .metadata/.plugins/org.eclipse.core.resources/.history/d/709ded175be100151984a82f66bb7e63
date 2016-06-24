@@ -1,0 +1,21 @@
+package com.man.interval;
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Properties;
+
+public class TestProperties {
+
+	public static void main(String args[]) throws IOException{
+		
+		FileReader fr = new FileReader("C:\\Manoj\\config.properties");
+		
+		Properties p = new Properties();
+		p.load(fr);
+		System.out.println(p.getProperty("uname"));
+		System.out.println(p.getProperty("passwd"));
+		System.out.println(p.setProperty("One"));
+		
+	}
+	
+}

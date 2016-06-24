@@ -1,0 +1,27 @@
+package dsTutorialPoints;
+
+public class ArrayM<T> {
+
+	ArrayM<T>[] am;
+	
+	
+	public ArrayM<T> insert(T i, int index){
+		
+		int j = this.getSize();
+		
+		while(index >= j ){
+			
+			
+		}
+		
+		
+	}
+	
+	public int getSize(){
+		
+		
+		
+		return this.am.length; 
+	}
+	
+}

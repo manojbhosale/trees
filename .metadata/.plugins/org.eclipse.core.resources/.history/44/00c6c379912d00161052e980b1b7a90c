@@ -1,0 +1,104 @@
+package lists;
+
+public class SList {
+
+	public class Node{
+		private int item;
+		private Node next;
+		public Node(int i, Node n){
+			item = i;
+			next = n;
+		}
+		
+		public Node(){
+			
+		}
+	}
+	
+	private Node front;
+	private int size;
+	public SList(){
+		size = 1;
+		front = new Node();
+	}
+	
+	public SList(int i, Node n){
+		size = 1;
+		front = new Node(i,n);
+	}
+	
+	public SList(int i){
+		size = 1;
+		front = new Node(i,null);
+	}
+	
+	public boolean insertFront(int i){
+		Node p = front;
+		front.next = new Node(i,p);
+		size++;
+		return true;
+	}
+	
+	public boolean insertBack(int i){
+		Node p = front;
+		while(p.next != null){
+			p = p.next;
+		}
+		p.next = new Node(i,null);
+		size++;
+		return true;
+	}
+	
+	public int get(int i){
+		Node p = front;
+		if(i == 0){
+			return p.item;
+		}
+		int size = 0;
+		while(size != i){
+			p = p.next;
+			size++;
+		}
+		return p.item;
+	}
+	
+	public boolean removeFrontnode(int i){
+		front = front.next;
+		size--;
+		return true;
+	}
+	
+/*	public Node getBacknode(){
+		
+		Node p = front;
+		while(p.next != null){
+			p = p.next;
+		}
+		
+		return p;
+		
+	}
+*/	
+	public boolean removeBacknode(int i){
+		Node p = front;
+		Node old = p;
+		while(p.next != null){
+			p = p.next;
+			old = p;
+		}
+		
+		 old.next = null;
+		 size--;
+		 return true;
+	}
+	
+	public static void main(String[] args){
+		
+		SList sl = new SList();
+		for(int i = 0; i< 10;i++){
+			sl.insertFront(i);
+		}
+		
+		System.out.println(sl.get(2));
+	}
+}

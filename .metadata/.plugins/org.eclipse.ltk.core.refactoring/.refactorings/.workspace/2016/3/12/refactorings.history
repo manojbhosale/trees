@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;jliftOver&apos; to &apos;jLiftover&apos;&#x0D;&#x0A;- Original element: &apos;jliftOver&apos;&#x0D;&#x0A;- Renamed element: &apos;jliftOver&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;jliftOver&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=jliftOver" name="jLiftover" references="true" stamp="1457977826583" version="1.0"/>
+</session>

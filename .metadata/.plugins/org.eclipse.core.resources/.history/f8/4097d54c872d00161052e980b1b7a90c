@@ -1,0 +1,17 @@
+package lists;
+
+public class SList {
+
+	public class Node{
+		private int item;
+		
+		public Node(){
+			
+		}
+		
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,29 @@
+package lists;
+
+public class SList {
+
+	public class Node{
+		private int item;
+		private Node next;
+		public Node(int i, Node n){
+			item = i;
+			next = n;
+		}
+		
+		public Node(){
+			
+		}
+	}
+	
+	private Node front;
+	
+	public SList(){
+		front = new Node();
+	}
+	
+	public SList(int i, Node n){
+		front = new Node(i,n);
+	}
+	
+	
+}

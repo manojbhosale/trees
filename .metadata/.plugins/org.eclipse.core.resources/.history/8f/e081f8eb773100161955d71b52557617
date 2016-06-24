@@ -1,0 +1,16 @@
+package parameterized;
+
+import org.junit.internal.runners.JUnit38ClassRunner;
+import org.junit.runner.JUnitCore;
+
+public class TestRunner {
+
+	public static void main(String[] args){
+		
+		Result res = JUnitCore.runClasses(PrimeNumberCheckerTest.class);
+		for(){
+			
+		}
+		
+	}
+}

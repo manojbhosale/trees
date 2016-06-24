@@ -1,0 +1,21 @@
+package anonymousClasses;
+
+public class TestAnonymous {
+
+	public static void main(String args[]){
+		
+		
+		
+	}
+	
+	
+	
+}
+
+
+interface Shape{
+	
+	String name="Test";
+	void printName();
+	void draw();
+}

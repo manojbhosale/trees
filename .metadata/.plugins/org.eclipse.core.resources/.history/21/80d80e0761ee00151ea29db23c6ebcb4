@@ -1,0 +1,15 @@
+package anonymousClasses;
+
+public class TestAnonymous {
+
+	
+	
+}
+
+
+interface Shape{
+	
+	String name="Test";
+	
+	
+}

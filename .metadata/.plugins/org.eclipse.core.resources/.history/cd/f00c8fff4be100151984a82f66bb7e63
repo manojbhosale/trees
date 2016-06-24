@@ -1,0 +1,18 @@
+package com.man.interval;
+
+import java.util.TreeMap;
+
+public class CollectorTest {
+
+	public static void main(String args[]){
+		
+		TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
+		tm.put(10, "test1");
+		tm.put(10, "test1");
+		tm.put(10, "test1");
+		tm.put(10, "test1");
+		
+		
+	}
+	
+}
