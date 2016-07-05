@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="start"/>\r\n</watchExpressions>\r\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n<expression enabled\="true" text\="tn.getData() &gt; i"/>\r\n<expression enabled\="true" text\="tn.getData() &lt; i"/>\r\n<expression enabled\="true" text\="tn.getRight() \=\= null"/>\r\n</watchExpressions>\r\n

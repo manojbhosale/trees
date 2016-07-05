@@ -6,4 +6,10 @@
 	<item value="80" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
 	<section name="conditionHistory">
 	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="788" key="SashWeightTree"/>
+		<item value="211" key="SashWeightDetails"/>
+		<item value="587" key="WIDTH"/>
+		<item value="639" key="HEIGHT"/>
+	</section>
 </section>
